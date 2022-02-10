@@ -20,15 +20,24 @@ function draw()
       if (mouseIsPressed)
       {
         fill(200, 40, 60);
+        rect(x2, y2, 20, 20);
       } 
       else
       {
         fill(0, 200, 150);
+        ellipse(x2, y2, 20, 20);
       } 
-      ellipse(x2, y2, 20, 20);
     }
   }
   t = t + 0.01;
+}
+
+function keyPressed() {
+  if (keyCode === LEFT_ARROW) {
+    t = 0;
+  } else if (keyCode === RIGHT_ARROW) {
+    t = 0;
+  }
 }
 function windowResized()
 {
