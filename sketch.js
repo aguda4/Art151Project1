@@ -24,7 +24,7 @@ function draw()
       } 
       else
       {
-        fill(0, 200, 150);
+        fill(255, 204, 0);
         ellipse(x2, y2, 20, 20);
       } 
     }
@@ -41,5 +41,4 @@ function keyPressed() {
 }
 function windowResized()
 {
-  resizeCanvas(windowWidth, windowHeight);
-}
+  resizeCanvas(window
