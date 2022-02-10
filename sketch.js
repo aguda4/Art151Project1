@@ -1,6 +1,4 @@
-//my variables
 let t = 0;
-
 function setup()
 {
   createCanvas(windowWidth, windowHeight);
@@ -30,7 +28,7 @@ function draw()
       ellipse(x2, y2, 20, 20);
     }
   }
-  t += 0.01;
+  t = t + 0.01;
 }
 function windowResized()
 {
